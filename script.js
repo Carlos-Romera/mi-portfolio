@@ -1,4 +1,10 @@
 const nav = document.getElementById('cr-nav');
+const track = document.getElementById('cr-track');
+
+// Clonamos el contenido del carrusel para crear el efecto infinito sin cortes
+if (track) {
+    track.innerHTML += track.innerHTML;
+}
 
 window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
