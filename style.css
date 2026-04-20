@@ -144,6 +144,7 @@
 .cr-footer-copy { margin-top: 50px; font-size: 0.78rem; opacity: 0.35; border-top: 1px solid rgba(0,0,0,0.07); padding-top: 24px; }
 
 html { scroll-padding-top: 80px; }
+html { scroll-padding-top: 80px; scroll-behavior: smooth; }
 
 @media(max-width:768px) {
   .cr-container { padding: 0 20px; }
