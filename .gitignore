@@ -1,0 +1,6 @@
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Otros
+node_modules/
