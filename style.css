@@ -148,7 +148,6 @@
 .cr-footer-cta { font-size: clamp(2.2rem, 5.3vw, 4.7rem); font-weight: 300; color: var(--accent); text-decoration: none; text-transform: uppercase; letter-spacing: -2px; display: block; margin-top: 12px; transition: transform 0.2s ease; }
 .cr-footer-copy { margin-top: 50px; font-size: 0.78rem; opacity: 0.35; border-top: 1px solid rgba(0,0,0,0.07); padding-top: 24px; }
 
-html { scroll-padding-top: 80px; }
 html { scroll-padding-top: 80px; scroll-behavior: smooth; }
 
 @media(max-width:768px) {

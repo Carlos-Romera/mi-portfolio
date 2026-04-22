@@ -7,7 +7,9 @@ if (track) {
 }
 
 window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+    if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
 }, { passive: true });
 
 const items = document.querySelectorAll('.cr-timeline-item');
