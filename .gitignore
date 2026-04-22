@@ -1,6 +1,7 @@
 # Sistema Operativo
 .DS_Store
 Thumbs.db
-
+build/
+web/
 # Otros
 node_modules/
