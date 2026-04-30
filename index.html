@@ -30,11 +30,11 @@
         <!-- Carrusel decorativo (oculto para lectores de pantalla por ser puramente visual) -->
         <div class="cr-carousel" aria-hidden="true">
             <div class="cr-carousel-track" id="cr-track">
-                <img src="src/img/webp/img-1.webp" alt="Descripción" loading="lazy">
-                <img src="src/img/webp/img-2.webp" alt="Descripción" loading="lazy">
-                <img src="src/img/webp/img-3.webp" alt="Descripción" loading="lazy">
-                <img src="src/img/webp/img-4.webp" alt="Descripción" loading="lazy">
-                <img src="src/img/webp/img-5.webp" alt="Descripción" loading="lazy">
+                <img src="src/assets/img/webp/img-1.webp" alt="Descripción" loading="lazy">
+                <img src="src/assets/img/webp/img-2.webp" alt="Descripción" loading="lazy">
+                <img src="src/assets/img/webp/img-3.webp" alt="Descripción" loading="lazy">
+                <img src="src/assets/img/webp/img-4.webp" alt="Descripción" loading="lazy">
+                <img src="src/assets/img/webp/img-5.webp" alt="Descripción" loading="lazy">
                 
             </div>
         </div>
@@ -65,31 +65,83 @@
             </p>
         </section>
 
-        <!-- Sección 02: Proyectos Destacados -->
-        <section id="cr-trayectoria" class="cr-section">
-            <span class="cr-section-label">02 / Trayectoria</span>
-            <h3 class="cr-section-title">Experiencia aplicada a proyectos reales</h3>
-            <div class="cr-split">
-                <div>
-                    <h4>Freelance</h4>
-                    <p>Maquetación de proyectos educativos complejos en colaboración con empresas como McGraw Hill.</p>
-                    <div class="cr-img-box">
-                        <img src="src/img//webp/img-6.webp" class="cr-img" alt="Proyecto editorial" loading="lazy">
-                    </div>
-                </div>
-                <div>
-                    <div class="cr-img-box">
-                        <img src="src/img/webp/img-7.webp" class="cr-img" alt="Desarrollo web" loading="lazy">
-                    </div>
-                    <h4>Romera Creativos</h4>
-                    <p>Gestión de soluciones digitales integrales y arquitecturas robustas.</p>
+        <!-- Sección 02: Trayectoria (SIN CAMBIOS) -->
+<section id="cr-trayectoria" class="cr-section">
+    <span class="cr-section-label">02 / Trayectoria</span>
+    <h3 class="cr-section-title">Experiencia aplicada a proyectos reales</h3>
+    <div class="cr-split">
+        <div>
+            <h4>Freelance</h4>
+            <p>Maquetación de proyectos educativos complejos en colaboración con empresas como McGraw Hill.</p>
+            <div class="cr-img-box">
+                <img src="src/assets/img/webp/img-6.webp" class="cr-img" alt="Proyecto editorial" loading="lazy">
+            </div>
+        </div>
+        <div>
+            <div class="cr-img-box">
+                <img src="src/assets/img/webp/img-7.webp" class="cr-img" alt="Desarrollo web" loading="lazy">
+            </div>
+            <h4>Romera Creativos</h4>
+            <p>Gestión de soluciones digitales integrales y arquitecturas robustas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 03: Proyectos Destacados -->
+<section id="cr-proyectos" class="cr-section">
+    <span class="cr-section-label">03 / Proyectos</span>
+    <h3 class="cr-section-title">Desarrollos propios y experimentación técnica</h3>
+    
+    <div class="cr-split">
+        
+        <!-- Banco Jones -->
+        <div>
+            <h4>🏦 Banco Jones</h4>
+            <p>Simulador financiero interactivo: préstamos, inversiones y ahorros con cálculos en tiempo real.</p>
+            <div class="cr-tech-stack">
+                <span class="cr-tech-badge">HTML5</span>
+                <span class="cr-tech-badge">CSS3</span>
+                <span class="cr-tech-badge">JavaScript</span>
+            </div>
+            <div class="cr-proyecto-links">
+                <a href="https://carlos-romera.github.io/banco-jones" target="_blank" rel="noopener noreferrer" class="cr-link-demo">Demo en vivo →</a>
+                <a href="https://github.com/Carlos-Romera/banco-jones" target="_blank" rel="noopener noreferrer" class="cr-link-github">GitHub →</a>
+            </div>
+            <div class="cr-img-box" style="margin-top: 20px;">
+                <div class="cr-proyecto-placeholder">
+                    🏦
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <!-- Brutalismo Web -->
+        <div>
+            <h4>◢ Brutalismo Web</h4>
+            <p>Landing page de inspiración brutalista. Tipografía audaz,网格 crudo, jerarquía visual contundente y ausencia de ornamentación.</p>
+            <div class="cr-tech-stack">
+                <span class="cr-tech-badge">HTML5</span>
+                <span class="cr-tech-badge">CSS3</span>
+                <span class="cr-tech-badge">Grid/Flex</span>
+                <span class="cr-tech-badge cr-badge-coming">Próximamente</span>
+            </div>
+            <div class="cr-proyecto-links">
+                <span class="cr-link-coming">Demo en vivo —</span>
+                <span class="cr-link-coming">GitHub —</span>
+            </div>
+            <div class="cr-img-box" style="margin-top: 20px;">
+                <div class="cr-proyecto-placeholder cr-placeholder-brutal">
+                    ◢
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
-        <!-- Sección 03: Línea de Tiempo de Formación -->
+
+        <!-- Sección 04: Línea de Tiempo de Formación -->
         <section id="cr-formacion" class="cr-section">
-            <span class="cr-section-label">03 / Formación técnica</span>
+            <span class="cr-section-label">04 / Formación técnica</span>
             <h3 class="cr-section-title">Evolución de mi formación</h3>
             <div class="cr-timeline" id="cr-timeline">
                 <div class="cr-timeline-item">
@@ -116,9 +168,9 @@
             </div>
         </section>
 
-        <!-- Sección 04: Valor Diferencial -->
+        <!-- Sección 05: Valor Diferencial -->
         <section id="cr-origen" class="cr-section" style="border-bottom:none;">
-            <span class="cr-section-label">04 / El factor industrial</span>
+            <span class="cr-section-label">05 / El factor industrial</span>
             <h3 class="cr-section-title">Rigor industrial aplicado al código</h3>
             <p class="cr-origen-text">Haber liderado proyectos complejos durante 25 años en el sector industrial es la base de mi rigor y acabado impecable.</p>
         </section>
