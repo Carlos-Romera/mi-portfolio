@@ -264,3 +264,22 @@ html { scroll-padding-top: 80px; scroll-behavior: smooth; }
         gap: 16px;
     }
 }
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  background: #333;
+}
+.badge.react { background: #61DAFB; color: #222; }
+.badge.vite { background: #646CFF; }
+.badge.recharts { background: #22B5BF; }
+.badge.css-modules { background: #000; }
