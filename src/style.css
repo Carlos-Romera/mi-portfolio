@@ -190,30 +190,47 @@ html { scroll-padding-top: 80px; scroll-behavior: smooth; }
     margin: 8px 0 0;
 }
 
-.cr-link-demo {
-    font-size: 0.75rem;
-    text-decoration: none;
-    color: var(--accent);
-    border-bottom: 1px solid var(--accent);
-    padding-bottom: 2px;
-    transition: opacity 0.2s ease;
+/* === Nuevos enlaces con subrayado animado === */
+.cr-proyecto-links {
+    display: flex;
+    gap: 2rem;               /* un poco más de separación */
+    margin: 1rem 0 0;        /* mismo margen superior que tenías */
 }
 
-.cr-link-demo:hover {
-    opacity: 0.6;
-}
-
+.cr-link-demo,
 .cr-link-github {
-    font-size: 0.75rem;
+    font-family: 'Outfit', sans-serif;  /* se integra con tu tipografía */
+    font-weight: 600;
+    font-size: 0.8rem;                 /* ligeramente mayor que 0.75rem */
     text-decoration: none;
-    color: var(--subtle);
-    border-bottom: 1px solid var(--subtle);
-    padding-bottom: 2px;
-    transition: opacity 0.2s ease;
+    color: var(--accent);              /* usa tu color oscuro */
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
 }
 
+/* Subrayado animado */
+.cr-link-demo::after,
+.cr-link-github::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);        /* mismo color que el texto */
+    transition: width 0.3s ease;
+}
+
+/* Hover */
+.cr-link-demo:hover,
 .cr-link-github:hover {
-    opacity: 0.6;
+    color: var(--accent);            /* no cambia de color, solo se subraya */
+}
+
+.cr-link-demo:hover::after,
+.cr-link-github:hover::after {
+    width: 100%;
 }
 
 .cr-link-coming {
